@@ -25,7 +25,7 @@ services:
       - db
   frontend:
     env_file: .env
-    iamge: kozteg/taski_frontend
+    image: kozteg/taski_frontend
     volumes:
       - static:/frontend_static/
     command: cp -r /app/build/. /frontend_static/
